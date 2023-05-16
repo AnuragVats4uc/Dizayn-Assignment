@@ -1,0 +1,245 @@
+@import url("//db.onlinewebfonts.com/c/1d46114aa9840971b72ca7331f54ddc0?family=Copyright+Sharp+Type+Co.");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Archivo:wght@400;500;600;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/public/fonts/custom.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "Moneta";
+  src: url("/public/fonts/Moneta-Black.eot");
+  src: local("Moneta Black"), local("Moneta-Black"),
+    url("/public/fonts/Moneta-Black.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/Moneta-Black.woff2") format("woff2"),
+    url("/public/fonts/Moneta-Black.woff") format("woff"),
+    url("/public/fonts/Moneta-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moneta";
+  src: url("/public/fonts/Moneta-Bold.eot");
+  src: local("Moneta Bold"), local("Moneta-Bold"),
+    url("/public/fonts/Moneta-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/Moneta-Bold.woff2") format("woff2"),
+    url("/public/fonts/Moneta-Bold.woff") format("woff"),
+    url("/public/fonts/Moneta-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moneta";
+  src: url("/public/fonts/Moneta-Regular.eot");
+  src: local("Moneta"), local("Moneta-Regular"),
+    url("/public/fonts/Moneta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/Moneta-Regular.woff2") format("woff2"),
+    url("/public/fonts/Moneta-Regular.woff") format("woff"),
+    url("/public/fonts/Moneta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moneta";
+  src: url("/public/fonts/Moneta-Light.eot");
+  src: local("Moneta Light"), local("Moneta-Light"),
+    url("/public/fonts/Moneta-Light.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/Moneta-Light.woff2") format("woff2"),
+    url("/public/fonts/Moneta-Light.woff") format("woff"),
+    url("/public/fonts/Moneta-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+:root {
+  --backgroundPrimary: #effbff;
+  --text-gradient: linear-gradient(91.84deg, #3b97ec 0.67%, #7815f7 112.55%);
+  --secondary: #767d90;
+  --tertiary: #212529;
+  --quinary: #454343;
+  --senary: #121212;
+  --septenary: #e3f0f5;
+  --octonary: #4487ee;
+  --nonary: #3d3d3d;
+  --denary: #f5fdff;
+  --activeBottomColor: #b3c2c8;
+}
+
+.text {
+  background: -webkit-linear-gradient(91.84deg, #3b97ec 0.67%, #7815f7 112.55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box {
+  box-shadow: 0px 2.77243px 13.8622px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  background: linear-gradient(
+    217.02deg,
+    rgba(239, 251, 255, 0) 21.49%,
+    #d0e0e6 101.57%
+  ) !important;
+}
+.card-sm {
+  background: linear-gradient(
+    217.02deg,
+    rgba(239, 251, 255, 0) 21.49%,
+    #d0e0e6 101.57%
+  );
+}
+
+.card-icon {
+  background: linear-gradient(
+    180deg,
+    rgba(100, 159, 239, 0.2) 0%,
+    rgba(52, 177, 217, 0.2) 100%
+  );
+}
+
+.linear-gradient {
+  background: linear-gradient(146.96deg, #b2cdec -1.84%, #b2bbec 74.97%);
+}
+
+.footer-linear {
+  background: linear-gradient(
+    243.15deg,
+    rgba(239, 251, 255, 0) 4.06%,
+    #d0e0e6 96.95%
+  );
+}
+
+.view-all {
+  background: linear-gradient(91.74deg, #3b97ec 1.09%, #366cf5 103.4%);
+}
+
+.product-card {
+  background: linear-gradient(
+    217.02deg,
+    rgba(239, 251, 255, 0.5) 21.49%,
+    #d0e0e6 101.57%
+  );
+}
+
+.first-blur {
+  filter: blur(140px);
+  inset: 0px 0 0px 100px;
+  background: #3d94ed;
+}
+
+.active {
+  color: #000000;
+  border-bottom: 2px solid var(--activeBottomColor);
+}
+
+@media screen and (min-width: 1500px) {
+  .first-blur {
+    filter: blur(150px);
+    inset: 0px 0 0px 400px;
+    background: #3d94ed;
+  }
+}
+
+.about-blur {
+  background: #a093f1;
+  filter: blur(110px);
+}
+
+.services-blur {
+  background: #e6cffd;
+  filter: blur(125px);
+}
+
+
+@media screen and (min-width: 768px) {
+  .slick-slide[data-index="0"] {
+    margin-left: 100px !important;
+  }
+
+  .card-sm {
+    background: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slick-slide[data-index="0"] {
+    margin-left: 118px !important;
+  }
+}
+
+.animated-section {
+  animation-name: slideInFromTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-section.closing {
+  animation-name: slideOutToTop;
+}
+
+@keyframes slideOutToTop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animated-text {
+  animation-name: slideInFromBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
