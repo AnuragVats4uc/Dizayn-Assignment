@@ -1,6 +1,10 @@
 import React from "react";
 
-export const ChevronDown = ({onClick}:any) => {
+type Props = {
+  onClick: () => void;
+};
+
+export const ChevronDown = ({ onClick }: Props) => {
   return (
     <svg
       width="32"

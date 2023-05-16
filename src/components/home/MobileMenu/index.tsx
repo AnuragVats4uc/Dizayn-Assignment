@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 type MobileMenuProps = {
   isOpen: boolean;
-  onClick: any;
+  onClick: () => void;
 };
 
 const twc = {

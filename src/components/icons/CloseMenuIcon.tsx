@@ -1,6 +1,10 @@
 import React from "react";
 
-export const CloseMenuIcon = ({onClick}:any) => {
+type Props = {
+  onClick: () => void;
+};
+
+export const CloseMenuIcon = ({ onClick }: Props) => {
   return (
     <svg
       width="34"

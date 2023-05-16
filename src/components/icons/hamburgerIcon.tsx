@@ -1,6 +1,8 @@
 import React from "react";
-
-export const HamburgerIcon = ({onClick}:any) => {
+type Props = {
+  onClick: () => void;
+};
+export const HamburgerIcon = ({onClick}:Props) => {
   return (
     <svg
       width="34"
